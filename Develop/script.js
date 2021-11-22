@@ -10,6 +10,19 @@ function passwordLength() {
   result = Number(window.prompt("Type the number of characters you wish your password to be", ""));
   }
   passwordLength()
+function special() {
+  window.prompt('would you like special characters? y/n')
+}
+special()
+function numbers() {
+  window.prompt('would you like numbers? y/n')
+}
+numbers()
+function capital() {
+  window.prompt('capital letters? y/n')
+}
+capital()
+
 // function writePassword
 function writePassword() {
   var password = generatePassword();
@@ -21,7 +34,7 @@ function writePassword() {
 function generatePassword() {
   let values = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%"
 
-  // let password = ""
+  let password = ""
 
   for (var i = 1; i <= result; i++){
   password = password + values.charAt(Math.floor(Math.random() * Math.floor(values.length -1)));
